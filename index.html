@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width, initial-scale=1'>
+    <title>Nuuvem-Sua loja digital de jogos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> -->
+    <link rel='stylesheet' href='./css/style.css'>
+    <link rel="shortcut icon" href="//assets.nuuvem.com/assets/fe/images/nuuvem_logo-ab61ec645af3a6db7df0140d4792f31a.svg">
+</head>
+<body>
+    <header class="py-4">
+        <div class="container-fluid ">
+            <div class="row align-items-center justify-content-between">
+                <!-- menu hamburguer -->
+                <div class="col-lg-2 col-3 d-none div-hamburguer">
+                    <button class="menu-hamburguer" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="offcanvasExample">
+                        <img src="./imagens/menu.svg" width="100%">
+                    </button>
+                </div>
+                
+                <!-- offcanvas -->
+                <div class=" offcanvas offcanvas-start " tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+                    <!-- <div class="offcanvas-header">
+                    </div> -->
+                    <div class="offcanvas-body">
+                        <div class="row">
+                            <a class="m-2 col-12 d-flex align-items-center justify-content-start link-canvas promo" href="https://www.nuuvem.com/catalog/price/promo/sort/bestselling/sort-mode/desc">Promoções</a>
+                            <hr>
+                            <a class="m-2 col-12 d-flex align-items-center justify-content-start link-canvas pc" href="https://www.nuuvem.com/catalog/platforms/pc">PC</a>
+                            <hr>
+                            <a class="m-2 col-12 d-flex align-items-center justify-content-start link-canvas playstation" href="https://www.nuuvem.com/lp/pt/playstation/">Playstation</a>
+                            <a class="m-2 col-12 d-flex align-items-center justify-content-start link-canvas xbox" href="https://www.nuuvem.com/lp/pt/xbox/">Xbox</a>
+                            <a class="m-2 col-12 d-flex align-items-center justify-content-start link-canvas nintendo" href="https://www.nuuvem.com/lp/pt/nintendo/">Nintendo</a>
+                            <hr>
+                            <a class="m-2 col-12 d-flex align-items-center justify-content-start link-canvas mais" href="https://www.nuuvem.com/#">Mais</a>
+                            <hr>
+                            <a class="m-2 col-12 d-flex align-items-center justify-content-start link-canvas entrar-canvas" href="https://secure.nuuvem.com/account/login">Login</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- band -->
+                <a class="col-xl-2 col-lg-3 col-md-4 col-5" href="http://https://www.nuuvem.com">
+                    <div class="d-flex justify-content-start">
+                        <img  class="icon-brand" src="//assets.nuuvem.com/assets/fe/images/nuuvem_logo-ab61ec645af3a6db7df0140d4792f31a.svg" width="18%" alt="">
+                        <img src="//assets.nuuvem.com/assets/fe/images/nuuvem_name-8c08821d4b5cb727e06cf1a57f782262.svg" width="60%" alt="">
+                    </div>
+                </a>    
+                <!-- links -->
+                <div class="col-8 d-flex justify-content-center menu">
+                    <a class="m-2 d-flex align-items-center justify-content-around link promo" href="https://www.nuuvem.com/catalog/price/promo/sort/bestselling/sort-mode/desc">Promoções</a>
+                    <a class="m-2 d-flex align-items-center justify-content-around link pc" href="https://www.nuuvem.com/catalog/platforms/pc">PC</a>
+                    <a class="m-2 d-flex align-items-center justify-content-around link playstation" href="https://www.nuuvem.com/lp/pt/playstation/">Playstation</a>
+                    <a class="m-2 d-flex align-items-center justify-content-around link xbox" href="https://www.nuuvem.com/lp/pt/xbox/">Xbox</a>
+                    <a class="m-2 d-flex align-items-center justify-content-around link nintendo" href="https://www.nuuvem.com/lp/pt/nintendo/">Nintendo</a>
+                    <a class="m-2 d-flex align-items-center justify-content-around link mais" href="https://www.nuuvem.com/#"></a>
+                    <div class="search d-flex align-items-center">
+                        <input type="search" class="input-search" placeholder="Buscar" />
+                        <button type="submit" class="btn-search"></button>
+                    </div>
+                </div>
+                <!-- login/carrinho -->
+                <div class="col-2 d-flex justify-content-end">
+                    <a class="m-2 d-flex align-items-center justify-content-around link entrar" href="https://secure.nuuvem.com/account/login">Entrar</a>
+                    <div class="m-2 d-flex align-items-center justify-content-around link carrinho"> <img src="./imagens/Carrinho-cinza.png" width="25"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main -->
+    <br><br><br><br><br>
+    <main>
+        <div class="container d-flex flex-column align-items-center">
+            <!-- carrossel -->
+            <div id="carouselExampleInterval" class="carousel slide carrossel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                      <div class="d-flex ">
+                        <img src="./imagens/banner-img1.jpg" class="banner-principal" alt="...">
+                        <div class= "banner-secundario">
+                            <img src="./imagens/banner-img3.jpg" class="item-banner-secundario" alt="...">
+                            <img src="./imagens/banner-img2.jpg" class="item-banner-secundario" alt="...">
+                        </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <div class="d-flex ">
+                        <img src="./imagens/banner-img4.jpg" class="banner-principal" alt="...">
+                        <div class= "banner-secundario">
+                            <img src="./imagens/banner-img6.jpg" class="item-banner-secundario" alt="...">
+                            <img src="./imagens/banner-img5.jpg" class="item-banner-secundario" alt="...">
+                        </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item " data-bs-interval="2000">
+                    <div class="d-flex ">
+                        <img src="./imagens/banner-img4.jpg" class="banner-principal" alt="...">
+                        <div class= "banner-secundario">
+                            <img src="./imagens/banner-img3.jpg" class="item-banner-secundario" alt="...">
+                            <img src="./imagens/banner-img2.jpg" class="item-banner-secundario" alt="...">
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <!-- botoes do carrosel -->
+                <button class=" botao-slide-left" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class=" botao-slide-right" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                
+            </div>
+            <!-- lista de produtos -->
+            <br><br>
+            <div class="produtos row justify-content-around ">
+                <div class="col-10">
+                    <h2 class="categoria">Naruto</h2>
+                    <h4 class="descri-categoria">Ofertas dignas de um Hokage! Jogos com até 90% de desconto!</h4>
+                </div>
+                <div class="col-2 mais-jogos justify-content-center align-items-center">
+                    
+                    <a class="btn btn-primary ver-mais" href="https://www.nuuvem.com/promo/rockstar-games">VER MAIS</a>
+                    
+                </div>
+                <div class="col-lg-2 col-md-3 col-5 produto">
+                    <div class="img-jogo1">
+                        <img src="./imagens/jogo1.jpg" style="border-radius: 8px;"  width="100%" height="100%" alt="" >
+                    </div>
+                    <div class="descricao-jogo">
+                        <div class="nome-jogo row">Narutinho</div>
+                        <div class="plataforma-jogo row">
+                            <img src="./imagens/icon-steam.png" class="col-1" >
+                            <div class="col-1"></div>
+                            <img src="./imagens/icon-windows.png" class="col-1">
+                        </div>
+                        <div class="cronometro">
+                            tempo indeterminado
+                        </div>
+                        <div class="preco-jogo row justify-content-around">
+                            <a class="col-3 btn btn-primary desconto" href="https://www.nuuvem.com/item/naruto-shippuden-ultimate-ninja-storm-legacy">50%</a>
+                            <a class="col-8 btn btn-primary comprar" href="https://www.nuuvem.com/item/naruto-shippuden-ultimate-ninja-storm-legacy">R$ 50,99</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-5 produto">
+                    <div class="img-jogo2">
+                        <img src="./imagens/jogo2.jpg" style="border-radius: 8px;" width="100%" height="100%" alt="" >
+                    </div>
+                    <div class="descricao-jogo">
+                        <div class="nome-jogo row">Narutinho</div>
+                        <div class="plataforma-jogo row">
+                            <img src="./imagens/icon-steam.png" class="col-1" >
+                            <div class="col-1"></div>
+                            <img src="./imagens/icon-windows.png" class="col-1">
+                        </div>
+                        <div class="cronometro">
+                            tempo indeterminado
+                        </div>
+                        <div class="preco-jogo row justify-content-around">
+                            <a class="col-3 btn btn-primary desconto" href="https://www.nuuvem.com/item/naruto-to-boruto-shinobi-striker">50%</a>
+                            <a class="col-8 btn btn-primary comprar" href="https://www.nuuvem.com/item/naruto-to-boruto-shinobi-striker">R$ 50,99</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-3 col-5 produto"> 
+                    <div class="img-jogo3">
+                        <img src="./imagens/jogo3.jpg" style="border-radius: 8px;" width="100%" height="100%" alt="" >
+                    </div>
+                    <div class="descricao-jogo">
+                        <div class="nome-jogo row">Narutinho</div>
+                        <div class="plataforma-jogo row">
+                            <img src="./imagens/icon-steam.png" class="col-1" >
+                            <div class="col-1"></div>
+                            <img src="./imagens/icon-windows.png" class="col-1">
+                        </div>
+                        <div class="cronometro">
+                            tempo indeterminado
+                        </div>
+                        <div class="preco-jogo row justify-content-around">
+                            <a class="col-3 btn btn-primary desconto" href="https://www.nuuvem.com/bundle/naruto-shippuden-ultimate-ninja-storm-trilogy">50%</a>
+                            <a class="col-8 btn btn-primary comprar" href="https://www.nuuvem.com/bundle/naruto-shippuden-ultimate-ninja-storm-trilogy">R$ 50,99</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1 escondido"></div>
+                <div class="col-lg-2 col-md-3 col-5 produto"> 
+                    <div class="img-jogo4">
+                        <img src="./imagens/jogo4.jpg" style="border-radius: 8px;" width="100%" height="100%" alt="" >
+                    </div>
+                    <div class="descricao-jogo">
+                        <div class="nome-jogo row">Narutinho</div>
+                        <div class="plataforma-jogo row">
+                            <img src="./imagens/icon-steam.png" class="col-1" >
+                            <div class="col-1"></div>
+                            <img src="./imagens/icon-windows.png" class="col-1">
+                        </div>
+                        <div class="cronometro">
+                            tempo indeterminado
+                        </div>
+                        <div class="preco-jogo row justify-content-around">
+                            <a class="col-3 btn btn-primary desconto" href="https://www.nuuvem.com/item/naruto-shipuuden-ultimate-ninja-storm-4">50%</a>
+                            <a class="col-8 btn btn-primary comprar" href="https://www.nuuvem.com/item/naruto-shipuuden-ultimate-ninja-storm-4">R$ 50,99</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-5 produto"> 
+                    <div class="img-jogo5">
+                        <img src="./imagens/jogo5.jpg" style="border-radius: 8px;" width="100%" height="100%" alt="" >
+                    </div>  
+                    <div class="descricao-jogo">
+                        <div class="nome-jogo row">Narutinho</div>
+                        <div class="plataforma-jogo row">
+                            <img src="./imagens/icon-steam.png" class="col-1" >
+                            <div class="col-1"></div>
+                            <img src="./imagens/icon-windows.png" class="col-1">
+                        </div>
+                        <div class="cronometro">
+                            tempo indeterminado
+                        </div>
+                        <div class="preco-jogo row d-flex justify-content-around">
+                            <a class="col-3 btn desconto" href="https://www.nuuvem.com/item/naruto-storm-4-road-boruto-expansion">50%</a>
+                            <a class="col-8 btn comprar" href="https://www.nuuvem.com/item/naruto-storm-4-road-boruto-expansion">R$ 50,99</a>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+            <br><br>
+        </div>
+    </main>
+    <br>
+    <footer>
+        <div class="container">
+            <br>
+            <!-- links uteis -->
+            <div class="row links-uteis d-flex justify-content-start">
+                <a href="" class="col-2 col-lg-1 suporte">Suporte</a>
+                <a href="" class="col-2 col-lg-1 blog">Blog</a>
+                <a href="" class="col-2 col-lg-1 sobre">Sobre</a>
+                <a href="" class="col-2 col-lg-1 afiliados">Afiliados</a>
+                <a href="" class="col-1 carreiras">Carreiras</a>
+                <a href="" class="col-2 col-xxl-1 desenvolvedores">Desenvolvedores</a>
+                <a href="" class="col-2 envie-jog">Envie o seu jogo</a>
+            </div>           
+            <hr>
+            <!-- redes sociais -->
+            <div class="row sociais d-flex justify-content-start">
+                <div class="col-12 acompanhe">
+                    <h2>Acompanhe-nos</h2>
+                </div>
+                
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="div-social">
+                        <a href="" class="social-face">Facebook</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="div-social">
+                        <a href="" class="social-tw">Twitter</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="div-social">
+                        <a href="" class="social-yt">Youtube</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="div-social">
+                        <a href="" class="social-ig">Instagram</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="div-social">
+                        <a href="" class="social-roxa">Twitch</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="div-social">
+                        <a href="" class="social-disc">Discord</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <!-- direitos -->
+            <div class="row direitos d-flex justify-content-center">
+                <!-- logo -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center logo-footer">
+                    <a class="logo" data-text-powered="powered by" href="https://www.nuuvem.com/">
+                        <img alt="Nuuvem" title="Nuuvem" src="//assets.nuuvem.com/assets/fe/images/logo-nuuvem-contrast-0b104b6b90844264414463e65d010691.svg">
+                    </a>
+                    <small>© 2021</small>
+                </div>
+                <!-- legais -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center legal-footer">
+                    <nav class="legal">
+                        <ul class="row d-flex justify-content-center align-items-center">
+                            <li class="col-12 col-md-4 d-flex justify-content-center align-items-center"><a href="https://www.nuuvem.com/terms-of-use">Termos de Uso</a></li>
+                
+                            <li class="col-12 col-md-4 d-flex justify-content-center align-items-center"><a href="https://www.nuuvem.com/privacy-policy">Política de Privacidade</a></li>
+                
+                            <li class="col-12 col-md-4 d-flex justify-content-center align-items-center"><a target="_blank"  href="http://www.procon.rj.gov.br/">Procon-RJ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- endereco -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center endereco">
+                    <address>
+                        <p>
+                            Nuuvem Jogos Digitais S.A. – CNPJ 17.126.332/0001-10 <br>Av. das Américas 7899 Bloco 2 Sala 604 - Rio de Janeiro, RJ - 22793-081
+                        </p>
+                    </address>
+                </div>
+            </div>
+            <br>
+        </div>
+    </footer>
+    
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
