@@ -90,8 +90,7 @@ const validation = {
     phone(event){
         var elemento =event.target;
         var value = event.target.value
-        var re = new RegExp('^\([1-9]{2}\) (?:[2-8]|9[1-9])[0-9]{3}\-[0-9]{4}$');
-        if(!re.test(value)){
+        if(value!="(00) 00000-0000"){
             errorInput(elemento);
             alert("Telefone inválido");
         }
